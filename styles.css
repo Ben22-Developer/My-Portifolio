@@ -16,12 +16,6 @@
 body {
     background-color: rgb(181, 181, 181);
 }
-img {
-    width:100%;
-    height:100%;
-    object-fit: cover; 
-    background-color: var(--verydark-green);
-}
 a {
     text-decoration: none;
     background-color:var(--button-green);
@@ -92,7 +86,7 @@ article {
     height: 100vh;
     color: var(--white-color);
     background-color: var(--dark-green);
-    padding: 0 0 1rem 0;
+    padding:1rem;
     display:grid;
     grid-template-areas: 
     "welcome-list"
@@ -102,7 +96,7 @@ article {
         grid-area: welcome-list;
         justify-self: center;
         display: flex;
-        gap:4rem;
+        gap:2rem;
         li {
             transition: transform 300ms;
         }
@@ -120,7 +114,7 @@ article {
         }
     }
     .emoji-div-container:hover {
-        transform: scale(1.4);
+        transform: scale(1.2);
         cursor: pointer;
     }
     header {
@@ -331,5 +325,53 @@ footer {
                 text-align: center;
             }
         }
+    }
+}
+@media(width>=1920px) {
+    html {
+        font-size: 30px;
+    }
+}
+@media(width<1920px) and (width>=1440px) {
+    html {
+        font-size: 20px;
+    }
+}
+@media(width<1440px) and (width>=1024px) {
+    html {
+        font-size: 18px;
+    }
+}
+@media(width<1024px) and (width>=768px) {
+    html {
+        font-size: 16px;
+    }
+}
+@media(width<768px) and (width>=480px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media (width<480px) {
+    #projects {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap:2rem;
+    }
+}
+@media (width<480px) and (width>=380px) {
+    html {
+        font-size: 12px;
+    }
+}
+@media (width<380px) {
+    html {
+        font-size: 10px;
+    }
+}
+@media (height<320px) {
+    #navbar {
+        position: relative;
     }
 }
