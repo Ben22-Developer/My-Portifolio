@@ -33,6 +33,9 @@ a:active {
 ul {
     list-style: none;
 }
+abbr {
+    text-decoration: none;
+}
 article {
     display: flex;
     flex-direction: column;
