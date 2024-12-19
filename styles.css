@@ -382,12 +382,12 @@ footer {
         font-size: 10px;
     }
 }
-@media (height<320px) {
+@media (height<480px) {
     #navbar {
         position: relative;
     }
 }
-@media (aspect-ratio <= 2) {
+@media (aspect-ratio <= 2) or (height<480px) {
     #welcome-section {
         padding:2rem 0;
         height: max-content;
