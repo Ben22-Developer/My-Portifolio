@@ -137,7 +137,7 @@ article {
             color: var(--light-green);
         }
         p {
-            width: 70%;
+            width: 95%;
             margin: auto;
         }
         >*{
@@ -377,9 +377,14 @@ footer {
         font-size: 12px;
     }
 }
-@media (width<380px) {
+@media (width<380px) and (width>=300px){
     html {
         font-size: 10px;
+    }
+}
+@media (width < 300px) {
+    html {
+        font-size: 7px;
     }
 }
 @media (height<480px) {
