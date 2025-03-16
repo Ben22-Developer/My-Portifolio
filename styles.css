@@ -6,15 +6,25 @@
     letter-spacing: .05rem;
 }
 :root {
+    /*
     --dark-green:rgb(6, 34, 6);
     --white-color:rgb(255,255,255);
     --verydark-green:rgb(1, 15, 1);
     --light-green:rgb(1, 180, 1);
     --button-green:rgb(47, 52, 40);
-    --background-color:rgb(122, 142, 122);
+    --background-color:rgb(122, 142, 122); 
+    */
+
+    --dark-green:rgb(120, 80, 5);
+    --white-color:rgb(255, 255, 255);
+    --verydark-green:rgb(120, 78, 0);
+    --light-green:orange;
+    --button-green:rgb(158, 120, 49);
+    --background-color:rgb(215, 182, 123);
 }
 body {
     background-color: rgb(181, 181, 181);
+    background-color: var(--background-color);
 }
 p {
     font-size: 1.5rem;
@@ -168,12 +178,11 @@ article {
         article {
             flex-shrink: 0;
             width: 25rem;
-            position: relative;
             border-radius: 2rem;
             .my-level-container {
                 width: 70%;
                 height:2rem;
-                border: .2rem solid white;
+                border: .2rem solid var(--white-color);
                 border-radius: 2rem;
                 .my-level {
                     background-color: var(--light-green); 
@@ -195,18 +204,6 @@ article {
                     animation: my-level-DSA 30000ms infinite;
                 }
             }
-        }
-        article::before {
-            content:' ';
-            height: 110%;
-            width: 105%;
-            background: var(--background-color);
-            position: absolute;
-            z-index: -1;
-            border-radius: 2rem;   
-            left:-2.5%;
-            bottom: -5%;
-            filter: blur(.1rem);
         }
     }  
 }
