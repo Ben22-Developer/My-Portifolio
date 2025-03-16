@@ -346,6 +346,22 @@ footer {
         }
     }
 }
+
+::-webkit-scrollbar {
+    width: 1rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: var(--light-green);
+    border-radius: 1rem;
+    margin-block: .25rem;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: black;
+    border-radius: 1rem;
+}
+
 @media(width>=1920px) {
     html {
         font-size: 30px;
