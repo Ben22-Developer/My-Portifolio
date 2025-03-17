@@ -383,10 +383,14 @@ footer {
     html {
         font-size: 14px;
     }
+}
+
+@media (width < 768px) {
     .vertical-scroll::-webkit-scrollbar {
         width: 14px;
-    }
+    }    
 }
+
 @media (width<480px) {
     #projects {
         display: flex;
